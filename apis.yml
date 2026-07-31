@@ -1,7 +1,24 @@
 aid: opendurian
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/opendurian.png
 name: OpenDurian
-description: OpenDurian is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: OpenDurian is a Bangkok, Thailand based educational technology company delivering hybrid
+  (online plus offline) learning and test preparation. Its platform offers exam-prep courses for TOEIC,
+  IELTS, TOEFL, TCAS and Thai civil-service exams, language instruction in English, Chinese and Japanese,
+  secondary-school mathematics and science courses, an online bookstore, free English-proficiency
+  assessment tools, and extensive practice-test question banks. The company reports reach in the millions
+  of annual users across its learning ecosystem. It is a consumer-facing edtech product; as of this
+  enrichment pass no public developer API, developer portal, or API documentation was found.
 url: https://raw.githubusercontent.com/api-evangelist/opendurian/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Education
+- EdTech
+- Test Preparation
+- Language Learning
+- E-Learning
+- Thailand
+- Online Courses
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/opendurian-domain-security.yml
 - type: Website
   url: https://opendurian.com
+- type: TermsOfService
+  url: https://opendurian.com/terms_of_service
+- type: PrivacyPolicy
+  url: https://opendurian.com/privacy_policy
+- type: Support
+  url: https://opendurian.com/about
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
